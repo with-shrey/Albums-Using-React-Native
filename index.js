@@ -5,8 +5,9 @@
 
 //Import a library to help create a registerComponent
 import React from 'react';
-import { Text, AppRegistry } from 'react-native';
-
+import { AppRegistry, View } from 'react-native';
+import Header from './src/components/header';
+import AlbumList from './src/components/AlbumList';
 //Create a registerComponent
 // const App = () => {
 //   return (
@@ -14,8 +15,10 @@ import { Text, AppRegistry } from 'react-native';
 //   );
 // };
 const App = () => (
-
-    <Text>Shrey text</Text>
+  <View style={{ flex: 1 }}>
+    <Header headerText={'Albums'} />
+    <AlbumList />
+  </View>
   );
 
 
